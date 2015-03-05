@@ -519,49 +519,144 @@ body.no-bg {
 	box-shadow: 0px -1px 0px 0px rgba(5,38,57,0.05);
 }
 
-#tab-panel {
-	width: 100%;
-	position: relative;
+/* Tabs */
+
+#tabs-container {
+	display: block;
+	clear: both;
 }
 
-#main-nav-tabs {
-	border-bottom: 0;
-	padding: 0;
-}
-
-#main-nav-tabs li {
-	width: 25%;
+.tabs-buttons li {
 	text-align: center;
-	font-size: 2.5em;
-	border-top-right-radius: 5px;
+	padding: 20px 10px;
+	border: 1px solid #eaeaea;
+}
+
+.tabs-buttons li:first-child {
 	border-top-left-radius: 5px;
-	float: left;
+	border-bottom-left-radius: 5px;
 }
 
-#main-nav-tabs li:hover {
-	border-bottom: 0;
-	background: #fff;
+.tabs-buttons li:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
-#main-nav-tabs li a {
-	text-decoration:none;
-	color: #888;
-}
-
-.act-tab {
-	border: 0;
-	/*
-	background: #2578e9;
+.tabs-buttons li:hover:not(.activeTab) a {
 	background: -moz-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#2578e9),color-stop(100%,#3fe7d9));
 	background: -webkit-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: -o-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: -ms-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
-	*/
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#main-nav-tabs li.act-tab a {
-	/*color: #fff;*/
+.tabs-buttons li.activeTab {
+	background: -moz-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
+	background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#2578e9),color-stop(100%,#3fe7d9));
+	background: -webkit-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
+	background: -o-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
+	background: -ms-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
+	background: linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 }
+
+.tabs-buttons li a {
+	text-decoration: none;
+	color: #888;
+	font-size: 2.2em;
+}
+
+.tabs-buttons li.activeTab a {
+	color: #fff;
+}
+
+.tabs-content {
+	padding: 15px 0;
+	width: 100%;
+	position: relative;
+}
+
+.tabs-category-container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.tabs-content-category-list li {
+	display: block;
+	padding: 5px 0 5px 15px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.tabs-content-category-list li:hover a {
+	color: #aaa;
+}
+
+.tabs-content-category-list li  a {
+	text-decoration: none;
+	color: #888;
+	font-size: 1.1em;
+}
+
+.tabs-content-grid {
+	position: relative;
+	padding-left: 25px;
+}
+
+.tabs-grid-item {
+	padding: 15px;
+}
+
+.tabs-grid-item .inner-item {
+	width: 100%;
+	border: 1px solid #eaeaea;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.tabs-grid-item .inner-item:hover .item-title {
+	height: 70px;
+}
+
+.tabs-grid-item .inner-item:hover {
+	border-color: #ccc;
+}
+
+.tabs-grid-item .inner-item .item-link {
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+.tabs-grid-item .inner-item .photo-frame {
+	display: block;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.tabs-grid-item .inner-item .photo-frame img {
+	border: none;
+	height: 115px;
+}
+
+.tabs-grid-item .inner-item .item-title {
+	width: 100%;
+	background: rgba(0, 0, 0, .4);
+	text-align: center;
+	height: 0;
+	position: absolute;
+	bottom: 0;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.tabs-grid-item .inner-item .item-title span {
+	line-height: 70px;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 1.5em;
+}
+
 
