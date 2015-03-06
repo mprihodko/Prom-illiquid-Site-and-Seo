@@ -15,6 +15,50 @@ $(document).ready(function() {
 		}
 	);
 	
+	/* Accordion */
+	
+	$('.foot-accordion').accordion({
+      collapsible: true
+    });
+	
+	$('.foot-accordion a').click(function() {
+		if ( $( this ).find('.accor-toggle-icon i').hasClass('fa fa-angle-down') ) {
+			
+			$( this ).find('.accor-toggle-icon i').removeClass('fa fa-angle-down');
+			$( this ).find('.accor-toggle-icon i').addClass('fa fa-angle-up');
+			
+		} else {
+			
+			$( this ).find('.accor-toggle-icon i').removeClass('fa fa-angle-up');
+			$( this ).find('.accor-toggle-icon i').addClass('fa fa-angle-down');
+			
+		}
+	});
+	
+	/* Arrow Up */
+	
+	var arrow = document.querySelector('.scroll-top');
+	
+	window.addEventListener('scroll', function() {
+		if( window.pageYOffset > 250 ) {
+			arrow.classList.add('scroll-on');
+		} else {
+			arrow.classList.remove('scroll-on');
+		}	
+	});
+	
+	arrow.addEventListener('click', function(ev) {
+		ev.preventDefault();
+		
+		var top = setInterval(function() {
+			if ( window.pageYOffset > 0 ) {
+				document.body.scrollTop ? document.body.scrollTop -= 20 : document.documentElement.scrollTop -= 20;
+			} else {
+				clearInterval( top );
+			}
+		}, 10);
+	});
+	
 	/* Tabs */
 	
 	$('.tabs-buttons li').click(function(ev) {
