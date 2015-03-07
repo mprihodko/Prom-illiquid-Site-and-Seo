@@ -94,7 +94,6 @@ body.no-bg {
 	position: fixed;
 }
 
-
 .line-decoration:after {
 	background-color: rgba(136,136,136,0.15);
 }
@@ -507,10 +506,6 @@ body.no-bg {
 	height: 600px;
 }
 
-.carousel-inner .item {
-	position: relative;
-}
-
 .normal-carousel {
 	margin-top: -70px;
 }
@@ -523,7 +518,6 @@ body.no-bg {
 	margin: 0 auto;
 	width: 100%;
 }
-
 
 .carousel-description {
 	padding-bottom: 190px;
