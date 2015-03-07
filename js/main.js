@@ -35,6 +35,29 @@ $(document).ready(function() {
 		}
 	});
 	
+	/* Top Fixed Menu */
+	
+	var topBar = document.getElementById('top-bar'),
+		header = document.getElementById('header'),
+		carousel = document.getElementById('main-carousel');
+		
+	window.addEventListener('scroll', function(ev) {
+		
+		ev.preventDefault();
+		
+		if( window.pageYOffset > 110 ) {
+			header.classList.add('fixed-header');
+			topBar.style.display = 'none';
+			carousel.classList.add('fixed-carousel');
+		} else {
+			header.classList.remove('fixed-header');
+			topBar.style.display = 'block';
+			carousel.classList.remove('fixed-carousel');
+		}
+		
+	});
+	
+	
 	/* Arrow Up */
 	
 	var arrow = document.querySelector('.scroll-top');
