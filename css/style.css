@@ -578,22 +578,32 @@ body.no-bg {
 	right: 5%;
 	height: 110px;
 	z-index: 20;
-	background: rgba(235, 235, 235, 0.3);
-	padding: 15px 0;
 	box-sizing: border-box;
+}
+
+#IdLikeToBuy {
+	width: 70%;
+	float: left;
+}
+
+#IdLikeToSell {
+	width: 25%;
+	float: right;
 }
 
 .search-inner {
 	padding: 0 20px;
-	width: 100%;
 	box-sizing: border-box;
+	background: rgba(235, 235, 235, 0.3);
+	padding: 15px;
 }
 
 .search-input {
+	height: 80px;
+	width: 70%;
 	line-height: 80px;
 	vertical-align: middle;
 	background: rgba(255, 255, 255, .8);
-	width: 60%;
 	float: left;
 	z-index: 250;
 	border: none;
@@ -611,15 +621,25 @@ body.no-bg {
 }
 
 .s-butt {
-	width: 38%;
 	float: right;
 	z-index: 250;
+}
+
+.s-butt button {
+	width: 100%;
+}
+
+#IdLikeToBuy .s-butt {
+	width: 27%;
+}
+
+#IdLikeToSell .s-butt {
+	width: 100%;
 }
 
 .s-butt  button {
 	height: 80px;
 	position: relative;
-	width: 50%;
 	text-align: center;
 	padding: 0;
 	border: none;
@@ -726,7 +746,7 @@ body.no-bg {
 	height: 66px;
 	z-index: 20;
 	display: block;
-	background-image: none, #ffffff none repeat center top, -moz-linear-gradient(top,rgba(255,255,255,0.75) 0px,rgba(255,255,255,0.8) 5px,rgba(255,255,255,0.86) 10px,rgba(255,255,255,0.9) 20px,rgba(255,255,255,0.94) 30px,rgba(255,255,255,0.98) 50px,rgba(255,255,255,0.99) 60px,#ffffff 70px);
+	background-image: -moz-linear-gradient(top,rgba(255,255,255,0.75) 0px,rgba(255,255,255,0.8) 5px,rgba(255,255,255,0.86) 10px,rgba(255,255,255,0.9) 20px,rgba(255,255,255,0.94) 30px,rgba(255,255,255,0.98) 50px,rgba(255,255,255,0.99) 60px,#ffffff 70px);
 	background-image: none, -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,#ffffff));
 	background-image: none, -webkit-linear-gradient(top,rgba(255,255,255,0.75) 0px,rgba(255,255,255,0.8) 5px,rgba(255,255,255,0.86) 10px,rgba(255,255,255,0.9) 20px,rgba(255,255,255,0.94) 30px,rgba(255,255,255,0.98) 50px,rgba(255,255,255,0.99) 60px,#ffffff 70px);
 	background-image: none, -o-linear-gradient(top,rgba(255,255,255,0.75) 0px,rgba(255,255,255,0.8) 5px,rgba(255,255,255,0.86) 10px,rgba(255,255,255,0.9) 20px,rgba(255,255,255,0.94) 30px,rgba(255,255,255,0.98) 50px,rgba(255,255,255,0.99) 60px,#ffffff 70px);
@@ -764,6 +784,17 @@ body.no-bg {
 	border-bottom-right-radius: 5px;
 }
 
+.tabs-buttons li a {
+	text-decoration: none;
+	color: #888;
+	font-size: 1.8em;
+}
+
+
+.tabs-buttons li.activeTab a {
+	color: #fff;
+}
+
 .tabs-buttons li:hover:not(.activeTab) a {
 	background: -moz-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#2578e9),color-stop(100%,#3fe7d9));
@@ -772,7 +803,7 @@ body.no-bg {
 	background: -ms-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
 }
 
 .tabs-buttons li.activeTab {
@@ -784,15 +815,6 @@ body.no-bg {
 	background: linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 }
 
-.tabs-buttons li a {
-	text-decoration: none;
-	color: #888;
-	font-size: 1.8em;
-}
-
-.tabs-buttons li.activeTab a {
-	color: #fff;
-}
 
 .tabs-content {
 	padding: 15px 0;
@@ -940,7 +962,7 @@ body.no-bg {
 }
 
 #footer .foot-accordion a .color-primary:hover {
-	background: -moz-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
+	/*background: -moz-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);*/
 	background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#2578e9),color-stop(100%,#3fe7d9));
 	background: -webkit-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: -o-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
@@ -1037,8 +1059,8 @@ body.no-bg {
 	border: 0;
 }
 
-.recent-posts .post-content a:hover {
-	background: -moz-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
+#footer .recent-posts .post-content a:hover {
+	/*background: -moz-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);*/
 	background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#2578e9),color-stop(100%,#3fe7d9));
 	background: -webkit-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: -o-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
@@ -1091,4 +1113,19 @@ body.no-bg {
 
 .scroll-top:hover i {
 	color: rgba(255, 255, 255, 1);
+}
+
+
+/* Cross browser hacks */
+
+@-moz-document url-prefix() {
+    .tabs-buttons li:hover:not(.activeTab) a,
+	#footer .foot-accordion a .color-primary:hover,
+	#footer .recent-posts .post-content a:hover	{
+		color: #2578E9;
+		background: transparent;
+	}
+	#searching {
+		top: 100px;
+	}
 }
