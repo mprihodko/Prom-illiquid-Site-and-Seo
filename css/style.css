@@ -579,28 +579,20 @@ body.no-bg {
 	height: 110px;
 	z-index: 20;
 	box-sizing: border-box;
-}
-
-#IdLikeToBuy {
-	width: 70%;
-	float: left;
-}
-
-#IdLikeToSell {
-	width: 25%;
-	float: right;
+	text-align: center;
 }
 
 .search-inner {
-	padding: 0 20px;
 	box-sizing: border-box;
 	background: rgba(235, 235, 235, 0.3);
 	padding: 15px;
+	display: inline-block;
+	margin: 0 10px;
 }
 
 .search-input {
+	min-width: 400px;
 	height: 80px;
-	width: 70%;
 	line-height: 80px;
 	vertical-align: middle;
 	background: rgba(255, 255, 255, .8);
@@ -608,11 +600,12 @@ body.no-bg {
 	z-index: 250;
 	border: none;
 	font-size: 2em;
-	padding: 0 0 0 15px;
+	padding: 0 25px 0 15px;
 	outline: none;
 	-webkit-transition: all .3s;
 	transition: all .3s;
 	border-radius: 4px;
+	margin-right: 15px;
 }
 
 .search-input:focus {
@@ -621,47 +614,52 @@ body.no-bg {
 }
 
 .s-butt {
-	float: right;
+	float: left;
 	z-index: 250;
 }
 
-.s-butt button {
-	width: 100%;
-}
-
-#IdLikeToBuy .s-butt {
-	width: 27%;
-}
-
-#IdLikeToSell .s-butt {
-	width: 100%;
-}
-
-.s-butt  button {
+#searching .search-block-button {
+	padding: 0 25px;
 	height: 80px;
 	position: relative;
 	text-align: center;
-	padding: 0;
 	border: none;
 }
 
-.s-butt button .btn-text {
+#searching .search-block-button .btn-text {
 	font-size: 1.7em;
 	line-height: 80px;
 	vertical-align: middle;
 	text-transform: uppercase;
 }
 
+.search-select-icon {
+	font-size: 1.3em;
+	color: #fff;
+	padding-left: 5px;
+	vertical-align: -3px;
+}
+
+#location-select-button {
+	background: rgba(0, 0, 255, .5);
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+
 #buy-search-button {
-	background: rgba(255, 0, 0, .4);
+	background: rgba(255, 0, 0, .5);
 	-webkit-transition: all .2s;
 	transition: all .2s;
 }
 
 #sell-search-button {
-	background: rgba(0, 255, 0, .4);
+	background: rgba(0, 255, 0, .5);
 	-webkit-transition: all .2s;
 	transition: all .2s;
+}
+
+#location-select-button:hover {
+	background: rgba(0, 0, 255, .8);
 }
 
 #sell-search-button:hover {
@@ -673,7 +671,8 @@ body.no-bg {
 }
 
 #buy-search-button:hover span,
-#sell-search-button:hover span {
+#sell-search-button:hover span,
+#location-select-button:hover span {
 	color: #fff;
 }
 

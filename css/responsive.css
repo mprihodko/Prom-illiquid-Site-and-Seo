@@ -64,17 +64,17 @@
 		height: 90px;
 	}
 	.search-input,
-	.s-butt button .btn-text	{
+	#searching .search-block-button .btn-text	{
 		line-height: 60px;
 		height: 60px;
 	}
 	.search-input {
 		font-size: 1.3em;
 	}
-	.s-butt button .btn-text {
+	#searching .search-block-button .btn-text {
 		font-size: 1.2em;
 	}
-	.s-butt button {
+	#searching .search-block-button {
 		height: 60px;
 	}
 	.carousel-contr {
@@ -154,7 +154,7 @@
 	.carousel-contr {
 		top: 120px;
 	}
-	.s-butt button .btn-text {
+	#searching .search-block-button .btn-text {
 		font-size: .9em;
 	}
 }
@@ -189,7 +189,7 @@
 	.carousel-contr {
 		font-size: 3em;
 	}
-	.s-butt button .btn-text {
+	#searching .search-block-button .btn-text {
 		font-size: .7em;
 	}
 }
