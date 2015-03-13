@@ -21,6 +21,97 @@ $(document).ready(function() {
 		}
 	);
 	
+	/* Searching dropdown */
+	
+	$('#location-select-button').click(searchDropDown);
+	
+	//document.querySelector('#location-select-button .sub-nav').addEventListener('click', function(ev) {});
+	
+	$('#location-select-button .sub-nav').click(function(ev) {
+		
+		var self = this;
+		
+		if( ev.target.tagName == 'SPAN' ) {
+			this.previousElementSibling.previousElementSibling.innerHTML = ev.target.innerHTML;
+		} else if( ev.target.tagName == 'INPUT' ) {
+			ev.stopPropagation();
+		}
+		
+	});
+	
+	
+	function searchDropDown() {
+		var iconSpan = $( this ).find('.search-select-icon i');
+		
+		if( $( iconSpan ).hasClass('fa fa-angle-down') ) {
+			$( iconSpan ).removeClass('fa fa-angle-down');
+			$( iconSpan ).addClass('fa fa-angle-up');
+		} else {
+			$( iconSpan ).removeClass('fa fa-angle-up');
+			$( iconSpan ).addClass('fa fa-angle-down');
+		}
+		
+		var subNav = $( this ).find('.sub-nav');
+		
+		if( $( subNav ).css('opacity') == 0 ) {
+			$( subNav ).css('visibility', 'visible');
+			$( subNav ).animate({
+				opacity: .8,
+				top: '100%'
+			}, 300);
+		} else {
+			$( subNav ).animate({
+				opacity: 0,
+				top: '110%'
+			}, 300, function() {
+				$( this ).css('visibility', 'hidden');
+			});
+		}
+	}
+	
+	
+	/* Fill in search dropdown */
+	
+	(function fillInSearchDropDown() {
+		// AJAX
+		var cities = ['Винница', 'Луцк', 'Днепропетровск', 'Житомир', 'Ужгород', 'Запорожье',
+		'Ивано-Франковск', 'Киев', 'Кировоград', 'Львов', 'Николаев', 'Одесса', 'Полтава',
+		'Ровно', 'Сумы', 'Тернополь', 'Харьков', 'Херсон', 'Черкассы', 'Чернигов', 'Черновцы'];
+		
+		try {
+			var dropDownUl = document.querySelector('#location-select-button .sub-nav ul');
+			dropDownUl.innerHTML = '';
+			
+			fill();
+		} catch(err) {
+			console.log( err.type + ' ' + err.message );
+		}
+		
+		function fill() {
+			for(var i=0; i<cities.length; i++) {
+				var li = document.createElement('li');
+				
+				var a = document.createElement('a');
+				a.setAttribute('href', '#');
+				
+				var span = document.createElement('span');
+				span.innerHTML = cities[i];
+				
+				a.appendChild(span);
+				li.appendChild(a);
+				
+				dropDownUl.appendChild(li);
+			}
+		}
+		
+	})();
+	
+	
+	/* Perfect scrollbar */
+	
+	$('#location-select-button .sub-nav ul').perfectScrollbar();
+
+	
 	/* Accordion */
 	
 	$('.foot-accordion').accordion({
@@ -251,20 +342,26 @@ $(document).ready(function() {
 	
 	
 	function createCategoryList( arr ) {
-		var catList = document.querySelector('.tabs-content-category-list');
 		
-		catList.innerHTML = '';
+		try {
+			var catList = document.querySelector('.tabs-content-category-list');
+			catList.innerHTML = '';
+			
+			fill();
+		} catch(err) {
+			console.log( err.type + ' ' + err.message );
+		}
 		
-		for(var i=0; i<arr.length; i++) {
-			
-			var li = document.createElement('li');
-			var link = document.createElement('a');
-			link.setAttribute('href', '#');
-			link.innerHTML = arr[i];
-			li.appendChild(link);
-			
-			catList.appendChild( li );
-			
+		function fill() {
+			for(var i=0; i<arr.length; i++) {
+				var li = document.createElement('li');
+				var link = document.createElement('a');
+				link.setAttribute('href', '#');
+				link.innerHTML = arr[i];
+				li.appendChild(link);
+				
+				catList.appendChild( li );
+			}
 		}
 		
 	}
