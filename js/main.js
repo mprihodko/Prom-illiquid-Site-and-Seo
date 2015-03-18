@@ -149,11 +149,23 @@ $(document).ready(function() {
 			if( window.pageYOffset > 110 ) {
 				header.classList.add('fixed-header');
 				topBar.style.display = 'none';
-				carousel.classList.add('fixed-carousel');
+				
+				try {
+					carousel.classList.add('fixed-carousel');
+				} catch(err) {
+					console.log( err.type + ' ' + err.message );
+				}
+				
 			} else {
 				header.classList.remove('fixed-header');
 				topBar.style.display = 'block';
-				carousel.classList.remove('fixed-carousel');
+				
+				try {
+					carousel.classList.remove('fixed-carousel');
+				} catch(err) {
+					console.log( err.type + ' ' + err.message );
+				}
+				
 			}
 			
 			return;
