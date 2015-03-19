@@ -5,16 +5,39 @@ $(document).ready(function() {
 	$('#main-nav > li').hover(
 		function() {
 			
-			$( this ).find('.sub-nav').css('visibility', 'visible');
-			$( this ).find('.sub-nav').animate({
-				opacity: .8
+			var subNavOut = $( this ).find('.sub-nav.out-level');
+			
+			$( subNavOut ).css('visibility', 'visible').animate({
+				opacity: .9
 			}, 300);
 			
 		},
 		function() {
 			
-			$( this ).find('.sub-nav').css('visibility', 'hidden');
-			$( this ).find('.sub-nav').animate({
+			var subNavOut = $( this ).find('.sub-nav.out-level');
+			
+			$( subNavOut ).css('visibility', 'hidden').animate({
+				opacity: 0
+			}, 300);
+			
+		}
+	);
+	
+	$('.downItem').hover(
+		function() {
+		
+			var subNavInn = $( this ).find('.inn-level');
+			
+			$( subNavInn ).css('visibility', 'visible').animate({
+				opacity: .9
+			}, 300);
+		
+		},
+		function() {
+			
+			var subNavInn = $( this ).find('.inn-level');
+			
+			$( subNavInn ).css('visibility', 'hidden').animate({
 				opacity: 0
 			}, 300);
 			
@@ -134,12 +157,19 @@ $(document).ready(function() {
 	
 	/* Top Fixed Menu & Mobile Responsive Menu */
 	
-	var	header = document.getElementById('header'),
+	try {
+		
+		var	header = document.getElementById('header'),
 		carousel = document.getElementById('main-carousel'),
 		mobileMenu = document.getElementById('dl-menu'),
 		mainNav = document.getElementById('main-nav'),
 		topBar = document.getElementById('top-bar'),
 		topBarArrow = document.querySelector('.top-bar-arrow ');
+		
+	} catch(err) {
+		console.log( err.type + ' ' + err.message );
+	}
+	
 		
 	window.addEventListener('scroll', function(ev) {
 		ev.preventDefault();
@@ -195,10 +225,9 @@ $(document).ready(function() {
 			
 		},
 		turnOff: function() {
+			if( mainNav ) mainNav.style.display = 'inline-block';
 			
-			mainNav.style.display = 'inline-block';
-			
-			mobileMenu.style.display = 'none';
+			if( mobileMenu ) mobileMenu.style.display = 'none';
 			
 			topBar.style.display = 'block';
 			topBar.classList.add('full-width-line');
@@ -236,19 +265,22 @@ $(document).ready(function() {
 	
 	//
 	
-	mobileMenu.addEventListener('click', function() {
+	if( mobileMenu ) {
+		mobileMenu.addEventListener('click', function() {
 		
-		if( this.querySelector('.menu-open').style.display == 'inline' ) {
-			this.querySelector('.menu-open').style.display = 'none';
-			this.querySelector('.menu-back').style.display = 'inline';
-		} else {
-			this.querySelector('.menu-open').style.display = 'inline';
-			this.querySelector('.menu-back').style.display = 'none';
-		}
+			if( this.querySelector('.menu-open').style.display == 'inline' ) {
+				this.querySelector('.menu-open').style.display = 'none';
+				this.querySelector('.menu-back').style.display = 'inline';
+			} else {
+				this.querySelector('.menu-open').style.display = 'inline';
+				this.querySelector('.menu-back').style.display = 'none';
+			}
+			
+			this.querySelector('.dl-menu').classList.toggle('dl-menu-open');
 		
-		this.querySelector('.dl-menu').classList.toggle('dl-menu-open');
-		
-	});
+		});	
+	}
+	
 	
 	
 	/* Arrow Up */
