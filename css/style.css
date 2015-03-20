@@ -627,13 +627,8 @@ body.no-bg {
 	border: none;
 	-webkit-transition: all .2s;
 	transition: all .2s;
+	box-sizing: border-box;
 }
-
-/*
-#searching .search-block-button:focus {
-	outline: none;
-}
-*/
 
 #searching .search-block-button .btn-text {
 	font-size: 1.7em;
@@ -666,10 +661,12 @@ body.no-bg {
 }
 
 #location-select-button .sub-nav ul {
-	width: 239px;
+	width: auto;
 	height: 175px;
 	position: relative;
 	margin-bottom: 0;
+	background: transparent;
+	box-shadow: none;
 }
 
 #buy-search-button .search-select-icon  {
@@ -699,6 +696,28 @@ body.no-bg {
 
 #searching .search-block-button:hover .btn-text {
 	color: #fff;
+}
+
+#location-select-button .promptDiv {
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	max-width: 200px;
+	z-index: 10;
+	background: rgba(255,255,255, .7);
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+#location-select-button .promptDiv .promptUl {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+}
+
+#location-select-button .prompt-on {
+	display: inline-block;
 }
 
 /* Main Carousel */
@@ -1286,6 +1305,11 @@ body.no-bg {
 
 #cabinet-navigation .sub-nav li a {
 	padding-right: 0;
+}
+
+#cabinet-content {
+	margin-top: 20px;
+	display: block;
 }
 
 /* Footer */
