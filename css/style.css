@@ -392,7 +392,7 @@ body.no-bg {
 
 .sub-nav ul {
 	width: 210px;
-	background-color: rgba(48,48,48,0.97);
+	background: rgba(255,255,255,0.97);
 	box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
 	padding: 10px 0;
 }
@@ -403,20 +403,20 @@ body.no-bg {
 	padding: 0 10px 0 10px;
 }
 
-.sub-nav ul li:hover {
-	background-color: rgba(224,224,224,0.07);
+.sub-nav > ul > li:hover > a {
+	background-color: rgba(58,58,58,0.07);
 }
 
 .sub-nav ul li:hover > a span {
-	color: #2578e9;
+	/*background: -webkit-linear-gradient(left, #4d71da 32%, #35c4f4 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
 }
 
 .sub-nav > ul > li > a {
-	padding-top: 7px;
-	padding-bottom: 7px;
-	font: normal normal 11px / 15px "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+	 font: normal 500 12px / 16px "Roboto", Helvetica, Arial, Verdana, sans-serif;
 	text-transform: uppercase;
-	color: #e0e0e0;
+	color: #3a3a3a;
 }
 
 .sub-nav li a {
@@ -585,7 +585,8 @@ body.no-bg {
 
 .search-inner {
 	box-sizing: border-box;
-	background: rgba(235, 235, 235, 0.3);
+	/* background: rgba(235, 235, 235, 0.3); */
+	background: transparent;
 	padding: 15px;
 	display: inline-block;
 	margin: 0 10px;
@@ -649,7 +650,7 @@ body.no-bg {
 	width: 239px;
 	top: 120%;
 	padding: 5px 5px 0 5px;
-	background-color: rgba(48,48,48,0.97);
+	background: rgba(255,255,255,0.97);
 	box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
 	box-sizing: content-box;
 }
@@ -657,7 +658,7 @@ body.no-bg {
 #location-select-button .sub-nav  input {
 	width: 100%;
 	padding: 2px 5px;
-	margin-bottom: 5px;
+	margin-bottom: 25px;
 }
 
 #location-select-button .sub-nav ul {
@@ -674,24 +675,24 @@ body.no-bg {
 }
 
 #location-select-button {
-	background: rgba(136, 136, 136, .5);
+	background: rgba(76, 145, 240, .5);
 }
 #location-select-button:hover {
-	background: rgba(136, 136, 136, .8);
+	background: rgba(76, 145, 240, .8);
 }
 
 #buy-search-button {
-	background: rgba(245, 0, 0, .5);
+	background:rgba(245, 245, 245, .5);
 }
 #buy-search-button:hover {
-	background: rgba(245, 0, 0, .8);
+	background: rgba(245, 245, 245, .8);
 }
 
 #sell-search-button {
-	background: rgba(0, 245, 0, .5);
+	background: rgba(5, 75, 171, .5);
 }
 #sell-search-button:hover {
-	background: rgba(0, 245, 0, .8);
+	background:	rgba(5, 75, 171, .8);
 }
 
 #searching .search-block-button:hover .btn-text {
@@ -704,7 +705,7 @@ body.no-bg {
 	left: 10px;
 	max-width: 200px;
 	z-index: 10;
-	background: rgba(255,255,255, .7);
+	background: rgba(0, 0, 0, .6);
 	padding: 5px 10px;
 	border-radius: 4px;
 }
@@ -1286,6 +1287,15 @@ body.no-bg {
 	border: 1px solid #eaeaea;
 }
 
+#cabinet-navigation .sub-nav ul,
+#cabinet-navigation .sub-nav {
+	width: 230px;
+}
+
+#cabinet-navigation .sub-nav .sub-nav {
+	left: 231px;
+}
+
 #cabinet-navigation #main-nav > li {
 	margin: 0 25px;
 }
@@ -1304,7 +1314,7 @@ body.no-bg {
 }
 
 #cabinet-navigation .sub-nav li a {
-	padding-right: 0;
+	padding-right: 10px;
 }
 
 #cabinet-content {
@@ -1369,7 +1379,6 @@ body.no-bg {
 }
 
 #footer .foot-accordion a .color-primary:hover {
-	/*background: -moz-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);*/
 	background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#2578e9),color-stop(100%,#3fe7d9));
 	background: -webkit-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
 	background: -o-linear-gradient(30deg,#2578e9 0%,#3fe7d9 100%);
