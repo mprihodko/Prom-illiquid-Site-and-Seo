@@ -2,7 +2,7 @@
 	<html>
 		<head>
 			<meta charset="utf-8">
-			<title>Регистрация</title>
+			<title>Подкатегория</title>
 			<meta name="description" content="Центральный украинский ресурс по купле / продаже неликвидов">
 			<meta name="keywords" content="Неликвиды, купля, продажа">
 			<meta name="author" content="SITE&SEO">
@@ -164,7 +164,7 @@
 											Home
 										</span>
 									</a>
-									<div class="sub-nav">
+									<div class="sub-nav out-level">
 										<ul>
 											<li>
 												<a href="index.html" onclick="return false;">
@@ -196,7 +196,7 @@
 											<i class="underline"></i>
 										</span>
 									</a>
-									<div class="sub-nav">
+									<div class="sub-nav out-level">
 										<ul>
 											<li>
 												<a href="#" onclick="return false;">
@@ -228,7 +228,7 @@
 											<i class="underline"></i>
 										</span>
 									</a>
-									<div class="sub-nav">
+									<div class="sub-nav out-level">
 										<ul>
 											<li>
 												<a href="#" onclick="return false;">
@@ -260,7 +260,7 @@
 											<i class="underline"></i>
 										</span>
 									</a>
-									<div class="sub-nav">
+									<div class="sub-nav out-level">
 										<ul>
 											<li>
 												<a href="#" onclick="return false;">
@@ -292,7 +292,7 @@
 											<i class="underline"></i>
 										</span>
 									</a>
-									<div class="sub-nav">
+									<div class="sub-nav out-level">
 										<ul>
 											<li>
 												<a href="#" onclick="return false;">
@@ -334,7 +334,7 @@
 						
 						<div class="wf-table">
 							<div class="wf-td hgroup">
-								<h1>Регистрация</h1>
+								<h1>Подкатегория</h1>
 							</div>
 							<div class="wf-td">
 								<ul class="breadcrumbs text-normal">
@@ -342,7 +342,10 @@
 										<a href="#">Главная</a>
 									</li>
 									<li>
-										<a href="#">Регистрация</a>
+										<a href="#">Категории</a>
+									</li>
+									<li>
+										<a href="#">Подкатегория</a>
 									</li>
 								</ul>
 							</div>
@@ -353,177 +356,338 @@
 				
 				<!-- Page title -->
 				
+				
 				<!-- Main Content -->
 				
-				<div id="main">
-					<div class="container wf-wrap">
-						<div class="row">
+				<div id="main" class="cat-main">
+					<div class="container wf-wrap clearfix">
+					
+						<div id="content" class="content">
+					
+							<p class="cat-result-count">Showing all 6 result</p>
 							
-							<div class="form-container">
-								<form name="regist-form" action="#" method="#">
-									<div class="form-fields">
-										<span class="form-name">
-											<input type="text" class="validate" placeholder="Ваше имя *" name="name" value="">
-										</span>
-										<span class="form-name">
-											<input type="text" class="validate" placeholder="E-mail *" name="email" value="">
-										</span>
-										<span class="form-name">
-											<input type="password" class="validate" placeholder="Пароль *" name="password" value="">
-										</span>
-										<span class="form-name">
-											<input type="text" class="validate" placeholder="Название компании" name="company" value="">
-										</span>
-									</div>
-									
-									<p>
-										<a href="#" id="doRegistr" class="form-submit">
-											<span>Зарегистрироваться</span>
-										</a>
-									</p>
-								</form>
+							<div class="cat-ordering">
+								<select>
+									<option value="pop">Sort by popularity</option>
+									<option value="rate">Sort by average rating</option>
+									<option value="date">Sort by newest</option>
+									<option value="asc">Sort by price: low to high</option>
+									<option value="desc">Sort by price: high to low</option>
+								</select>
 							</div>
 							
-						</div>
-						
-						
-						
-						<hr>
-						
-						<div class="row">
-							<!-- Feedback Section -->
-							
-							<div id="feedback-container">
-							
-								<header>
-									<h2>Наши клиенты и партнеры</h2>
-									<h4>Нас уже более 10 000!</h4>
-								</header>
-							
-								<div class="feeback-content clearfix">
+							<div class="row cat-row">
 								
-									<div id="feedback-carousel-comments" class="col-sm-6">
-									
-										<!-- Customer comments block -->
-										<section id="testimonial-slider" class="carousel slide">
-										
-												<ol class="carousel-indicators">
-													<li data-target="#testimonial-slider" data-slide-to="0" class="active"></li>
-													<li data-target="#testimonial-slider" data-slide-to="1"></li>
-													<li data-target="#testimonial-slider" data-slide-to="2"></li>
-												</ol>
-												
-												<div class="carousel-inner" role="listbox">
-													<div class="item active">
-														<p>
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum erat, finibus sit amet fringilla id, accumsan sed nisl. 
-															Nulla odio eros, blandit ac metus faucibus, sollicitudin posuere sapien. Maecenas ut convallis arcu. Phasellus at tellus 
-															sed odio vestibulum sodales in at lacus. Sed commodo metus et sapien pretium, ac sollicitudin enim dignissim. Donec tempus 
-															diam et porta aliquam. Ut efficitur sollicitudin diam a accumsan.
-														</p>
-														<span class="img">
-															<img src="img/feedback-person-1.jpg" alt="person 1">
-														</span>
-														<span class="who">
-															<span class="text-primary">Diana Richards</span>
-															<br>
-															<span class="text-secondary">manager</span>
-														</span>
-													</div>
-													<div class="item">
-														<p>
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum erat, finibus sit amet fringilla id, accumsan sed nisl. 
-															Nulla odio eros, blandit ac metus faucibus, sollicitudin posuere sapien. Maecenas ut convallis arcu. Phasellus at tellus 
-															sed odio vestibulum sodales in at lacus. Sed commodo metus et sapien pretium, ac sollicitudin enim dignissim. Donec tempus 
-															diam et porta aliquam. Ut efficitur sollicitudin diam a accumsan.
-														</p>
-														<span class="img">
-															<img src="img/feedback-person-2.jpg" alt="person 2">
-														</span>
-														<span class="who">
-															<span class="text-primary">Anna White</span>
-															<br>
-															<span class="text-secondary">loyal client</span>
-														</span>
-													</div>
-													<div class="item">
-														<p>
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum erat, finibus sit amet fringilla id, accumsan sed nisl. 
-															Nulla odio eros, blandit ac metus faucibus, sollicitudin posuere sapien. Maecenas ut convallis arcu. Phasellus at tellus 
-															sed odio vestibulum sodales in at lacus. Sed commodo metus et sapien pretium, ac sollicitudin enim dignissim. Donec tempus 
-															diam et porta aliquam. Ut efficitur sollicitudin diam a accumsan.
-														</p>
-														<span class="img">
-															<img src="img/feedback-person-3.jpg" alt="person 3">
-														</span>
-														<span class="who">
-															<span class="text-primary">Jacob Firebird</span>
-															<br>
-															<span class="text-secondary">happy client</span>
-														</span>
-													</div>
+								<div class="col-md-4 col-sm-4 cat-content-row-item">
+									<article>
+										<div class="cat-item-img">
+											<a href="#" class="cat-item-hover-effect">
+												<img src="img/sub-item-1.jpg" alt="#">
+											</a>
+										</div>
+										<div class="cat-item-title">
+											<a href="#">
+												<h4>
+													IPhone 6 mockup
+												</h4>
+												<span class="price">
+													<span class="amount">$15.00</span>
+												</span>
+											</a>
+										</div>
+										<div class="hover-over-btns">
+											<a href="#" title="В корзину">
+												<div class="buy-it">
+													<i class="fa fa-shopping-cart"></i>
 												</div>
-												
-										</section>
-										<!-- Customer comments block End -->
-									</div>
-									
-									<div id="feedback-partners" class="col-sm-6">
-										<!-- Partners icons block -->
-										<section id="partners-icons" class="clearfix">
-										
-											<div class="col-sm-4 partner-icon">
-												<a href="#" target="_blank" title="Partner 1">
-													<img src="img/l-authentic.png">
-												</a>
-											</div>
-											
-											<div class="col-sm-4 partner-icon">
-												<a href="#" target="_blank" title="Partner 2">
-													<img src="img/l-hamb.png">
-												</a>
-											</div>
-											
-											<div class="col-sm-4 partner-icon">
-												<a href="#" target="_blank" title="Partner 3">
-													<img src="img/l-ransom.png">
-												</a>
-											</div>
-											
-											<div class="col-sm-4 partner-icon">
-												<a href="#" target="_blank" title="Partner 3">
-													<img src="img/l-steak.png">
-												</a>
-											</div>
-											
-											<div class="col-sm-4 partner-icon">
-												<a href="#" target="_blank" title="Partner 3">
-													<img src="img/l-thesaviour.png">
-												</a>
-											</div>
-											
-											<div class="col-sm-4 partner-icon">
-												<a href="#" target="_blank" title="Partner 3">
-													<img src="img/l-vintage.png">
-												</a>
-											</div>
-										
-										</section>
-										<!-- Partners icons block End -->
-									</div>
+											</a>
+											<a href="#" title="К товару">
+												<div class="show-it">
+													<i class="fa fa-share"></i>
+												</div>
+											</a>
+										</div>
+									</article>
+								</div>
 								
+								<div class="col-md-4 col-sm-4 cat-content-row-item">
+									<article>
+										<div class="cat-item-img">
+											<a href="#" class="cat-item-hover-effect">
+												<img src="img/sub-item-2.jpg" alt="#">
+											</a>
+										</div>
+										<div class="cat-item-title">
+											<a href="#">
+												<h4>
+													Vynil record mockup
+												</h4>
+												<span class="price">
+													<span class="amount">Free!</span>
+												</span>
+											</a>
+										</div>
+										<div class="hover-over-btns">
+											<a href="#" title="В корзину">
+												<div class="buy-it">
+													<i class="fa fa-shopping-cart"></i>
+												</div>
+											</a>
+											<a href="#" title="К товару">
+												<div class="show-it">
+													<i class="fa fa-share"></i>
+												</div>
+											</a>
+										</div>
+									</article>
+								</div>
+								
+								<div class="col-md-4 col-sm-4 cat-content-row-item">
+									<article>
+										<div class="cat-item-img">
+											<a href="#" class="cat-item-hover-effect">
+												<img src="img/sub-item-3.jpg" alt="#">
+											</a>
+										</div>
+										<div class="cat-item-title">
+											<a href="#">
+												<h4>
+													IPad air mockup
+												</h4>
+												<span class="price">
+													<span class="amount">$10.00 - $99.00</span>
+												</span>
+											</a>
+										</div>
+										<div class="hover-over-btns">
+											<a href="#" title="В корзину">
+												<div class="buy-it">
+													<i class="fa fa-shopping-cart"></i>
+												</div>
+											</a>
+											<a href="#" title="К товару">
+												<div class="show-it">
+													<i class="fa fa-share"></i>
+												</div>
+											</a>
+										</div>
+									</article>
+								</div>
+								
+								<div class="col-md-4 col-sm-4 cat-content-row-item">
+									<article>
+										<div class="cat-item-img">
+											<a href="#" class="cat-item-hover-effect">
+												<img src="img/sub-item-1.jpg" alt="#">
+											</a>
+										</div>
+										<div class="cat-item-title">
+											<a href="#">
+												<h4>
+													IPhone 6 mockup
+												</h4>
+												<span class="price">
+													<span class="amount">$15.00</span>
+												</span>
+											</a>
+										</div>
+										<div class="hover-over-btns">
+											<a href="#" title="В корзину">
+												<div class="buy-it">
+													<i class="fa fa-shopping-cart"></i>
+												</div>
+											</a>
+											<a href="#" title="К товару">
+												<div class="show-it">
+													<i class="fa fa-share"></i>
+												</div>
+											</a>
+										</div>
+									</article>
+								</div>
+								
+								<div class="col-md-4 col-sm-4 cat-content-row-item">
+									<article>
+										<div class="cat-item-img">
+											<a href="#" class="cat-item-hover-effect">
+												<img src="img/sub-item-2.jpg" alt="#">
+											</a>
+										</div>
+										<div class="cat-item-title">
+											<a href="#">
+												<h4>
+													Vynil record mockup
+												</h4>
+												<span class="price">
+													<span class="amount">Free!</span>
+												</span>
+											</a>
+										</div>
+										<div class="hover-over-btns">
+											<a href="#" title="В корзину">
+												<div class="buy-it">
+													<i class="fa fa-shopping-cart"></i>
+												</div>
+											</a>
+											<a href="#" title="К товару">
+												<div class="show-it">
+													<i class="fa fa-share"></i>
+												</div>
+											</a>
+										</div>
+									</article>
+								</div>
+								
+								<div class="col-md-4 col-sm-4 cat-content-row-item">
+									<article>
+										<div class="cat-item-img">
+											<a href="#" class="cat-item-hover-effect">
+												<img src="img/sub-item-3.jpg" alt="#">
+											</a>
+										</div>
+										<div class="cat-item-title">
+											<a href="#">
+												<h4>
+													IPad air mockup
+												</h4>
+												<span class="price">
+													<span class="amount">$10.00 - $99.00</span>
+												</span>
+											</a>
+										</div>
+										<div class="hover-over-btns">
+											<a href="#" title="В корзину">
+												<div class="buy-it">
+													<i class="fa fa-shopping-cart"></i>
+												</div>
+											</a>
+											<a href="#" title="К товару">
+												<div class="show-it">
+													<i class="fa fa-share"></i>
+												</div>
+											</a>
+										</div>
+									</article>
 								</div>
 								
 							</div>
-					
-							<!-- Feedback Section End -->
+							
 						</div>
 						
+						<!-- Sidebar -->
+						
+						
+						<aside id="sidebar" class="sidebar"> 
+							<div class="sidebar-content">
+								
+								<section class="widget-shopping-cart">
+									<div class="widget-title">YOUR CART</div>
+									<ul class="widget-cart-list">
+										<li class="empty">No products in the cart</li>
+									</ul>
+								</section>
+								
+								<section class="widget-product-search">
+									<div class="widget-title">SEARCH</div>
+									<form role="search" method="get" action="#">
+										<input type="search" class="search-field" placeholder="Search Products.." value="" name="S" title="Search for..">
+										<input type="submit" value="search">
+										<span class="search-icon">
+											<i class="fa fa-search"></i>
+										</span>
+									</form>
+								</section>
+								
+								<section class="widget-product-categories">
+									<div class="widget-title">CATEGORIES</div>
+									<ul class="product-cat">
+										<li class="cat-item cat-parent">
+											<a href="#">Clothes and Footwear</a>
+											<span class="count">(17)</span>
+											<ul class="children">
+												<li>
+													<a href="#">Footwear</a>
+													<span class="count">(3)</span>
+												</li>
+												<li>
+													<a href="#">Hoodies</a>
+													<span class="count">(7)</span>
+												</li>
+												<li>
+													<a href="#">T-Shirts</a>
+													<span class="count">(7)</span>
+												</li>
+											</ul>
+										</li>
+										<li class="cat-item cat-parent">
+											<a href="#">Digital goods</a>
+											<span class="count">(21)</span>
+											<ul class="children">
+												<li>
+													<a href="#">Smartphones</a>
+													<span class="count">(3)</span>
+												</li>
+												<li>
+													<a href="#">Laptops</a>
+													<span class="count">(7)</span>
+												</li>
+												<li>
+													<a href="#">PC's</a>
+													<span class="count">(7)</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+								
+								<section class="widget-top-rated">
+									<div class="widget-title">TOP RATED</div>
+									<ul class="widget-cart-list">
+										<li>
+											<a href="#" title="#"> 
+												<img src="img/shop-thumb-1.jpg" alt="IPhone mockup 6">
+												<span class="product-title">IPhone mockup 6</span>
+											</a>
+											<span class="amount">$15.00</span>
+										</li>
+										<li>
+											<a href="#" title="#"> 
+												<img src="img/shop-thumb-2.jpg" alt="IPad Air mockup">
+												<span class="product-title">IPad Air mockup</span>
+											</a>
+											<span class="amount">$15.00</span>
+										</li>
+										<li>
+											<a href="#" title="#"> 
+												<img src="img/shop-thumb-3.jpg" alt="High Space Sneakers">
+												<span class="product-title">High Space Sneakers</span>
+											</a>
+											<span class="amount">$15.00</span>
+										</li>
+										<li>
+											<a href="#" title="#"> 
+												<img src="img/shop-thumb-4.jpg" alt="Space Hoddie">
+												<span class="product-title">Space Hoddie</span>
+											</a>
+											<span class="amount">$15.00</span>
+										</li>
+									</ul>
+								</section>
+								
+							</div>
+						</aside>
+						
+						
+						<!-- Sidebar End-->
 						
 					</div>
 				</div>
 				
+				
+				
 				<!-- Main Content End -->
+				
+				<!-- Footer -->
 				
 				<footer id="footer">
 				
@@ -691,6 +855,8 @@
 				
 				</footer>
 				
+				<!-- Footer End -->
+				
 				<a href="#" class="scroll-top">
 					<i class="fa fa-arrow-up"></i>
 				</a>
@@ -703,6 +869,7 @@
 			<script src="js/bootstrap.js"></script>
 			<script src="js/perfect-scrollbar.jquery.js"></script>
 			<script src="js/fixedMenu.js"></script>
+			<script src="js/autoComplete.js"></script>
 			<script src="js/main.js"></script>
 		</body>
 	</html>

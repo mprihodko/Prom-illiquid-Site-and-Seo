@@ -2,7 +2,13 @@
 	
 	function autoComplete(input, arr) {
 		
-		input.addEventListener('keyup', function() {
+		try {
+			input.addEventListener('keyup', init);
+		} catch(err) {
+			console.log( err.type + ' ' + err.message );
+		}
+		
+		function init() {
 	
 			var val = this.value;
 			
@@ -29,7 +35,7 @@
 				});
 			});
 			
-		});
+		};
 		
 		var div = document.createElement('div');
 		var ul = document.createElement('ul');
