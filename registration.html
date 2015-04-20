@@ -697,7 +697,26 @@
 				</a>
 			
 			</section>
-			
+			<?php
+        $host="127.0.0.1";
+        $db="prom_illiquid";
+        $charset="UTF8";
+        $user="root";
+        $pass="123456";
+        $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+        $opt = array(
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+        );
+        $pdo = new PDO($dsn, $user, $pass, $opt);
+        if (isset($_POST['register'])) {
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $company = $_POST['company'];
+            $sql = $pdo->query("INSERT INTO user (name, email, password, company) VALUES ('$name', '$email', '$password', '$company')");
+        }
+        ?>﻿
 			
 			<script src="js/jquery-1.11.0.min.js"></script>
 			<script src="js/jquery-ui.js"></script>
