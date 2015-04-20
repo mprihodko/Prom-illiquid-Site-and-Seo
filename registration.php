@@ -712,17 +712,14 @@
     </body>
 </html>
 <?php
-namespace \registration;
-
-use \application\db\PDO_connect;
-
-$connect = new PDO_connect();
-
+require_once 'application/db/MyPDO.php';
+$conn= new PDO_connect();
+$conn->db_connect();
 if (isset($_POST['register'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $company = $_POST['company'];
-    $sql = $connect->dbh->query("INSERT INTO user (name, email, password, company) VALUES ('$name', '$email', '$password', '$company')");
+    $sql = $conn->dbh->query("INSERT INTO user (name, email, password, company) VALUES ('$name', '$email', '$password', '$company')");
 }
 ?>﻿
