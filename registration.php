@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -361,7 +361,7 @@
                     <div class="row">
 
                         <div class="form-container">
-                            <form name="regist-form" action="#" method="#">
+                            <form name="regist-form" action="registration.php" method="POST">
                                 <div class="form-fields">
                                     <span class="form-name">
                                         <input type="text" class="validate" placeholder="Ваше имя *" name="name" value="">
@@ -378,11 +378,15 @@
                                 </div>
 
                                 <p>
-                                    <a href="#" id="doRegistr" class="form-submit">
-                                        <span>Зарегистрироваться</span>
-                                    </a>
+
+                                    <!--<a href="#" id="doRegistr" class="form-submit">-->
+                                    <span> 
+                                        <input type="submit" class="validate" name="register" value="Зарегистрироваться">
+                                    </span>
+                                    <!--</a>-->
                                 </p>
                             </form>
+
                         </div>
 
                     </div>
@@ -696,27 +700,7 @@
                 <i class="fa fa-arrow-up"></i>
             </a>
 
-        </section>
-        <?php
-        $host="127.0.0.1";
-        $db="prom_illiquid";
-        $charset="UTF8";
-        $user="root";
-        $pass="123456";
-        $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-        $opt = array(
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-        );
-        $pdo = new PDO($dsn, $user, $pass, $opt);
-        if (isset($_POST['register'])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $company = $_POST['company'];
-        $sql = $pdo->query("INSERT INTO user (name, email, password, company) VALUES ('$name', '$email', '$password', '$company')");
-        }
-        ?>﻿
+        </section>        
 
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/jquery-ui.js"></script>
@@ -727,3 +711,18 @@
         <script src="js/main.js"></script>
     </body>
 </html>
+<?php
+namespace \registration;
+
+use \application\db\PDO_connect;
+
+$connect = new PDO_connect();
+
+if (isset($_POST['register'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $company = $_POST['company'];
+    $sql = $connect->dbh->query("INSERT INTO user (name, email, password, company) VALUES ('$name', '$email', '$password', '$company')");
+}
+?>﻿
