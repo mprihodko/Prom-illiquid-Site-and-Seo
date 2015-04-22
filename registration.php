@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -361,7 +361,7 @@
                     <div class="row">
 
                         <div class="form-container">
-                            <form name="regist-form" action="registration.php" method="POST">
+                            <form name="registform" action="registration.php" method="POST">
                                 <div class="form-fields">
                                     <span class="form-name">
                                         <input type="text" class="validate" placeholder="Ваше имя *" name="name" value="">
@@ -379,11 +379,15 @@
 
                                 <p>
 
-                                    <!--<a href="#" id="doRegistr" class="form-submit">-->
-                                    <span> 
-                                        <input type="submit" class="validate" name="register" value="Зарегистрироваться">
-                                    </span>
-                                    <!--</a>-->
+                                    <a href="#" id="doRegistr" class="form-submit">
+										<span>Зарегистрироваться</span>
+									</a>
+									<script>
+										document.getElementById('doRegistr').addEventListener('click', function(ev) {
+											ev.preventDefault();
+											document.forms.registform.submit();
+										});
+									</script>
                                 </p>
                             </form>
                             <?php

@@ -361,7 +361,7 @@
                     <div class="row">
 
                         <div class="form-container">
-                            <form name="login-form" action="#" method="POST">
+                            <form name="loginform" action="#" method="POST">
                                 <div class="form-fields">
                                     <span class="form-name login-form-input">
                                         <input type="text" class="validate" placeholder="E-mail *" name="email" value="">
@@ -379,11 +379,15 @@
                                 </p>
 
                                 <p>
-                                    <!--<a href="#" id="doRegistr" class="form-submit">-->                                    
-                                        <span>
-                                            <input type="submit" class="form-submit" name="login" value="Войти">
-                                        </span>
-                                    <!--</a>-->
+                                    <a href="#" id="doRegistr" class="form-submit">                                
+                                        <span>Войти</span>
+                                    </a>
+									<script>
+										document.getElementById('doRegistr').addEventListener('click', function(ev) {
+											ev.preventDefault();
+											document.forms.loginform.submit();
+										});
+									</script>
                                 </p>
                             </form>
                             <?php
