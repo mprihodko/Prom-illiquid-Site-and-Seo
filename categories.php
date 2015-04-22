@@ -686,7 +686,6 @@
 			<script src="js/perfect-scrollbar.jquery.js"></script>
 			<script src="js/jquery.fancybox.pack.js"></script>
 			<script src="js/fixedMenu.js"></script>
-			<script src="js/autoComplete.js"></script>
 			<script src="js/main.js"></script>
 		</body>
 	</html>

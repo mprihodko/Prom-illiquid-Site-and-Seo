@@ -911,5 +911,6 @@
 			<script src="js/fixedMenu.js"></script>
 			<script src="js/autoComplete.js"></script>
 			<script src="js/main.js"></script>
+			<script src="js/product_settings.js"></script>
 		</body>
 	</html>
