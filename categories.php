@@ -49,14 +49,14 @@
 									
 									<div class="right-block wf-td clearfix">
 										<div class="mini-login">
-											<a href="login.html" class="submit">
+											<a href="login.php" class="submit">
 												<i class="fa fa-sign-in"></i>
 												<span class="top-bar-icon-text">Войти</span>
 											</a>
 										</div>
 									
 										<div class="mini-login">
-											<a href="registration.html" class="submit">
+											<a href="registration.php" class="submit">
 												<i class="fa fa-pencil"></i>
 												<span class="top-bar-icon-text">Зарегистрироваться</span>
 											</a>
@@ -96,7 +96,7 @@
 					<div class="wf-wrap clearfix">
 							
 						<div id="branding" class="wf-td">
-							<a href="index.html">
+							<a href="index.php">
 								<img src="img/logo-regular.png" alt="Logo">
 							</a>
 						</div>
@@ -168,22 +168,22 @@
 									<div class="sub-nav out-level">
 										<ul>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>1. Business</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>2. Presentation</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>3. Creative</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>4. Photography</span>
 												</a>
 											</li>
@@ -366,12 +366,12 @@
 							<div class="col-md-3 col-sm-3 cat-content-row-item">
 								<article>
 									<div class="cat-item-img">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<img src="img/shop-item-1.jpg" alt="#">
 										</a>
 									</div>
 									<div class="cat-item-title">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<h3>
 												Digital Goods
 												<mark class="count">(3)</mark>
@@ -384,12 +384,12 @@
 							<div class="col-md-3 col-sm-3 cat-content-row-item">
 								<article>
 									<div class="cat-item-img">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<img src="img/shop-item-2.jpg" alt="#">
 										</a>
 									</div>
 									<div class="cat-item-title">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<h3>
 												Footwear
 												<mark class="count">(3)</mark>
@@ -402,12 +402,12 @@
 							<div class="col-md-3 col-sm-3 cat-content-row-item">
 								<article>
 									<div class="cat-item-img">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<img src="img/shop-item-3.jpg" alt="#">
 										</a>
 									</div>
 									<div class="cat-item-title">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<h3>
 												Hoodies
 												<mark class="count">(7)</mark>
@@ -420,12 +420,12 @@
 							<div class="col-md-3 col-sm-3 cat-content-row-item">
 								<article>
 									<div class="cat-item-img">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<img src="img/shop-item-4.jpg" alt="#">
 										</a>
 									</div>
 									<div class="cat-item-title">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<h3>
 												T-Shirts
 												<mark class="count">(7)</mark>
@@ -443,12 +443,12 @@
 							<div class="col-md-4 col-sm-4 cat-content-row-item">
 								<article>
 									<div class="cat-item-img">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<img src="img/shop-item-5.jpg" alt="#">
 										</a>
 									</div>
 									<div class="cat-item-title">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<h3>
 												Footwear
 												<mark class="count">(3)</mark>
@@ -461,12 +461,12 @@
 							<div class="col-md-4 col-sm-4 cat-content-row-item">
 								<article>
 									<div class="cat-item-img">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<img src="img/shop-item-6.jpg" alt="#">
 										</a>
 									</div>
 									<div class="cat-item-title">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<h3>
 												Hoodies
 												<mark class="count">(7)</mark>
@@ -479,12 +479,12 @@
 							<div class="col-md-4 col-sm-4 cat-content-row-item">
 								<article>
 									<div class="cat-item-img">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<img src="img/shop-item-7.jpg" alt="#">
 										</a>
 									</div>
 									<div class="cat-item-title">
-										<a href="subcategories.html">
+										<a href="subcategories.php">
 											<h3>
 												T-Shirts
 												<mark class="count">(7)</mark>
