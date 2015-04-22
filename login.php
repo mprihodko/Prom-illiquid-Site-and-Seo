@@ -379,14 +379,16 @@
                                 </p>
 
                                 <p>
-                                    <a href="#" id="doRegistr" class="form-submit" name="login">                                
-                                        <span>Войти</span>
-                                    </a>
+                                    <!-- <a href="#" id="doRegistr" class="form-submit" name="login"> -->                                
+                                        <span>
+											<input type="submit" name="login" class="form-submit">
+										</span>
+                                   <!-- </a> -->
                                     <script>
-                                        document.getElementById('doRegistr').addEventListener('click', function (ev) {
+                                        /*document.getElementById('doRegistr').addEventListener('click', function (ev) {
                                             ev.preventDefault();
                                             document.forms.loginform.submit();
-                                        });
+                                        });*/
                                     </script>
                                 </p>
                             </form>
