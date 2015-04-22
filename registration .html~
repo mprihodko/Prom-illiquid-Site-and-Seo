@@ -361,7 +361,7 @@
                     <div class="row">
 
                         <div class="form-container">
-                            <form name="regist-form" action="registration.php" method="POST">
+                            <form name="regist-form" action="" method="POST">
                                 <div class="form-fields">
                                     <span class="form-name">
                                         <input type="text" class="validate" placeholder="Ваше имя *" name="name" value="">
@@ -378,15 +378,13 @@
                                 </div>
 
                                 <p>
-
                                     <!--<a href="#" id="doRegistr" class="form-submit">-->
-                                    <span> 
-                                        <input type="submit" class="validate" name="register" value="Зарегистрироваться">
+                                    <span>
+                                        <input class="register" type="submit" name="register" value="Зарегистрироваться">
                                     </span>
                                     <!--</a>-->
                                 </p>
                             </form>
-
                         </div>
 
                     </div>
@@ -699,9 +697,8 @@
             <a href="#" class="scroll-top">
                 <i class="fa fa-arrow-up"></i>
             </a>
-
-        </section>        
-
+        </section>
+        
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/jquery-ui.js"></script>
         <script src="js/bootstrap.js"></script>
@@ -711,10 +708,3 @@
         <script src="js/main.js"></script>
     </body>
 </html>
-<?php
-require_once 'application/register/user.php';
-if (isset($_POST['register'])) {
-  $reg=new User();
-  $reg->register();
-}
-?>﻿
