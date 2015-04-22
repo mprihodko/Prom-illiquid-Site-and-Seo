@@ -378,18 +378,9 @@
                                 </div>
 
                                 <p>
-                                    <span>
-                                        <input type="submit" class="form-submit"  name="register" value="Зарегистрироваться">                                        
+                                    <span class="form-submit">
+                                        <input type="submit" name="register" value="Зарегистрироваться">                                        
                                     </span>
-                                    <!--                                    <a href="#" id="doRegistr" class="form-submit" name="register">
-                                                                            <span>Зарегистрироваться</span>
-                                                                        </a>
-                                                                        <script>
-                                                                            document.getElementById('doRegistr').addEventListener('click', function (ev) {
-                                                                                ev.preventDefault();
-                                                                                document.forms.registform.submit();
-                                                                            });
-                                                                        </script>-->
                                 </p>
                             </form>
                             <?php

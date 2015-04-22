@@ -948,6 +948,12 @@ body.no-bg {
 	position: relative;
 }
 
+.form-container p  .form-submit  input {
+	background: transparent;
+	border: 0;
+	outline: 0;
+}
+
 .form-container p  .form-submit:hover:after {
 	background-color: rgba(255,255,255, .3);
 }

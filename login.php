@@ -379,17 +379,9 @@
                                 </p>
 
                                 <p>
-                                    <!-- <a href="#" id="doRegistr" class="form-submit" name="login"> -->                                
-                                        <span>
-											<input type="submit" name="login" class="form-submit">
-										</span>
-                                   <!-- </a> -->
-                                    <script>
-                                        /*document.getElementById('doRegistr').addEventListener('click', function (ev) {
-                                            ev.preventDefault();
-                                            document.forms.loginform.submit();
-                                        });*/
-                                    </script>
+									<span class="form-submit">
+										<input type="submit" name="login">
+									</span>
                                 </p>
                             </form>
                             <?php
