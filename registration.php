@@ -381,18 +381,21 @@
                                     <span>
                                         <input type="submit" class="form-submit"  name="register" value="Зарегистрироваться">                                        
                                     </span>
-<!--                                    <a href="#" id="doRegistr" class="form-submit" name="register">
-                                        <span>Зарегистрироваться</span>
-                                    </a>
-                                    <script>
-                                        document.getElementById('doRegistr').addEventListener('click', function (ev) {
-                                            ev.preventDefault();
-                                            document.forms.registform.submit();
-                                        });
-                                    </script>-->
+                                    <!--                                    <a href="#" id="doRegistr" class="form-submit" name="register">
+                                                                            <span>Зарегистрироваться</span>
+                                                                        </a>
+                                                                        <script>
+                                                                            document.getElementById('doRegistr').addEventListener('click', function (ev) {
+                                                                                ev.preventDefault();
+                                                                                document.forms.registform.submit();
+                                                                            });
+                                                                        </script>-->
                                 </p>
                             </form>
                             <?php
+                            ini_set('error_reporting', E_ALL);
+                            ini_set('display_errors', 1);
+                            ini_set('display_startup_errors', 1);
                             require_once 'application/classes/user.php';
                             $user = new User();
                             if (isset($_POST['register'])) {

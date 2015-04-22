@@ -15,46 +15,50 @@ class User extends PDO_connect {
     }
 
     private function Valid($param, $e = true) {
-        $elem = trim(strip_tags($param));
-        if ($e == true) {
-            if (preg_match("#[aA-zZ0-9]+$#", $elem)) {
-                return $elem;
+        if (!empty($param)) {
+            $elem = trim(strip_tags($param));
+            if ($e == true) {
+                $elem = preg_replace("/[^a-zA-ZА-Яа-я0-9\s]/", "", $elem);
+                if (preg_match("/[a-zA-ZА-Яа-я0-9]/", $elem)) {
+                    return $elem;
+                }
             } else {
-                echo "Error";
+                if (preg_match('/\S+@\S+\.\S+/', $elem)) {
+                    return $elem;
+                }
             }
         } else {
-            if (preg_match('/\S+@\S+\.\S+/', $elem)) {
-                return $elem;
-            }
+            echo "Заполните все поля формы";
+            exit();
         }
     }
 
     function register() {
         $this->err = '';
-        if (!empty($this->Valid($_POST['name']))) {
+        if ($this->Valid($_POST['name'])) {
             $this->name = $this->Valid($_POST['name']);
         } else {
-            $this->err.='Введите корректное имя!';
+            $this->err.='Введите корректное имя!<br/>';
         }
-        if (!empty($this->Valid($_POST['email'], false))) {
-            $this->email = $this->Valid($_POST['email']);
+        if ($this->Valid($_POST['email'], false)) {
+            $this->email = $this->Valid($_POST['email'], false);
         } else {
-            $this->err.='Введите корректный email!';
+            $this->err.='Введите корректный email!<br/>';
         }
-        if (!empty($this->Valid($_POST['password']))) {
+        if ($this->Valid($_POST['password'])) {
             $this->password = $this->Valid($_POST['password']);
         } else {
-            $this->err.='Введите корректный пароль!';
+            $this->err.='Введите корректный пароль!<br/>';
         }
-        if (!empty($this->Valid($_POST['company']))) {
+        if ($this->Valid($_POST['company'])) {
             $this->company = $this->Valid($_POST['company']);
         } else {
-            $this->err.='Введите корректное имя компании!';
+            $this->err.='Введите корректное имя компании!<br/>';
         }
-        if (empty($this->err)) {
+        if (empty($this->err)) {           
             $sql = $this->dbh->query("INSERT INTO user (name, email, password, company) VALUES ('$this->name', '$this->email', '$this->password', '$this->company')");
         } else {
-            echo $this->err. "\n";
+            echo $this->err;
         }
     }
 
