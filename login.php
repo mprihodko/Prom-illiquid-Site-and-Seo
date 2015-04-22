@@ -379,21 +379,21 @@
                                 </p>
 
                                 <p>
-                                    <a href="#" id="doRegistr" class="form-submit">                                
+                                    <a href="#" id="doRegistr" class="form-submit" name="login">                                
                                         <span>Войти</span>
                                     </a>
-									<script>
-										document.getElementById('doRegistr').addEventListener('click', function(ev) {
-											ev.preventDefault();
-											document.forms.loginform.submit();
-										});
-									</script>
+                                    <script>
+                                        document.getElementById('doRegistr').addEventListener('click', function (ev) {
+                                            ev.preventDefault();
+                                            document.forms.loginform.submit();
+                                        });
+                                    </script>
                                 </p>
                             </form>
                             <?php
                             require_once 'application/classes/user.php';
                             $user = new User();
-                            if (isset($_POST['register'])) {
+                            if (isset($_POST['login'])) {
                                 $user->login();
                             }
                             $user->login();
