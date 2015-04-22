@@ -8,7 +8,7 @@ class PDO_connect {
 
     function __construct() {
         $this->user = 'root';
-        $this->password = '';
+        $this->password = '123456';
         $dsn = "mysql:host=127.0.0.1;dbname=prom_illiquid;charset=UTF8";
         $opt = array(
             PDO::ATTR_PERSISTENT => true,
@@ -17,10 +17,10 @@ class PDO_connect {
         );
         try {
             $this->dbh = new PDO($dsn, $this->user, $this->password, $opt);
-            echo "ok";
+            echo "<span style='color:green; font-size:18px;'>connect_db status :: connected</span><br>";
             return $this->dbh;
-        } catch (PDO_connect $e) {
-            echo 'Подключение не удалось: ' . $e->getMessage();
+        } catch (PDO_connect $e) {            
+            echo "<span style='color:red; font-size:18px;'>connect_db status :: disconnected".$e->getMessage()."</span><br>";
         }
     }
 

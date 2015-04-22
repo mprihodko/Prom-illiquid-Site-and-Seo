@@ -393,12 +393,14 @@
                                 </p>
                             </form>
                             <?php
+                            ini_set('error_reporting', E_ALL);
+                            ini_set('display_errors', 1);
+                            ini_set('display_startup_errors', 1);
                             require_once 'application/classes/user.php';
                             $user = new User();
                             if (isset($_POST['login'])) {
                                 $user->login();
-                            }
-                            $user->login();
+                            }                            
                             ?>﻿
                         </div>
 
