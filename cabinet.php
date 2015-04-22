@@ -49,14 +49,14 @@
 									
 									<div class="right-block wf-td clearfix">
 										<div class="mini-login">
-											<a href="login.html" class="submit">
+											<a href="login.php" class="submit">
 												<i class="fa fa-sign-in"></i>
 												<span class="top-bar-icon-text">Войти</span>
 											</a>
 										</div>
 									
 										<div class="mini-login">
-											<a href="registration.html" class="submit">
+											<a href="registration.php" class="submit">
 												<i class="fa fa-pencil"></i>
 												<span class="top-bar-icon-text">Зарегистрироваться</span>
 											</a>
@@ -96,7 +96,7 @@
 					<div class="wf-wrap clearfix">
 							
 						<div id="branding" class="wf-td">
-							<a href="index.html">
+							<a href="index.php">
 								<img src="img/logo-regular.png" alt="Logo">
 							</a>
 						</div>
@@ -140,12 +140,12 @@
 										<div class="sub-nav out-level">
 											<ul>
 												<li>
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Главная</span>
 													</a>
 												</li>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Персональные данные</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -172,7 +172,7 @@
 													</div>
 												</li>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Настройки доступа</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -194,7 +194,7 @@
 													</div>
 												</li>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Информация о компании</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -232,7 +232,7 @@
 												</li>
 												
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Бонусы и рейтинги</span>
 													</a>
 												</li>
@@ -247,7 +247,7 @@
 										<div class="sub-nav out-level">
 											<ul>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Управление товарами</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -269,12 +269,12 @@
 													</div>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Витрина</span>
 													</a>
 												</li>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Импорт</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -306,12 +306,12 @@
 													</div>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Прайсы</span>
 													</a>
 												</li>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Тендеры</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -338,7 +338,7 @@
 													</div>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Менеджеры групп</span>
 													</a>
 												</li>
@@ -353,17 +353,17 @@
 										<div class="sub-nav out-level">
 											<ul>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Сообщения</span>
 													</a>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Клиенты</span>
 													</a>
 												</li>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Экспорт</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -390,7 +390,7 @@
 													</div>
 												</li>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Настройка заказов</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -427,22 +427,22 @@
 										<div class="sub-nav out-level">
 											<ul>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Business</span>
 													</a>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Presentation</span>
 													</a>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Creative</span>
 													</a>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Photography</span>
 													</a>
 												</li>
@@ -457,7 +457,7 @@
 										<div class="sub-nav out-level">
 											<ul>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Настройка заказов</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -484,7 +484,7 @@
 													</div>
 												</li>
 												<li class="downItem">
-													<a href="index.html" onclick="return false;" class="clearfix">
+													<a href="index.php" onclick="return false;" class="clearfix">
 														<span class="cabinet-nav-text">Настройка доступа</span>
 														<span class="cabinet-nav-icon">
 															<i class="fa fa-angle-right"></i>
@@ -506,7 +506,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Персональные данные</span>
 													</a>
 												</li>
@@ -521,12 +521,12 @@
 										<div class="sub-nav out-level">
 											<ul>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Карта кабинета</span>
 													</a>
 												</li>
 												<li>
-													<a href="index.html" onclick="return false;">
+													<a href="index.php" onclick="return false;">
 														<span>Справка</span>
 													</a>
 												</li>

@@ -49,14 +49,14 @@
 									
 									<div class="right-block wf-td clearfix">
 										<div class="mini-login">
-											<a href="login.html" class="submit">
+											<a href="login.php" class="submit">
 												<i class="fa fa-sign-in"></i>
 												<span class="top-bar-icon-text">Войти</span>
 											</a>
 										</div>
 									
 										<div class="mini-login">
-											<a href="registration.html" class="submit">
+											<a href="registration.php" class="submit">
 												<i class="fa fa-pencil"></i>
 												<span class="top-bar-icon-text">Зарегистрироваться</span>
 											</a>
@@ -96,7 +96,7 @@
 					<div class="wf-wrap clearfix">
 							
 						<div id="branding" class="wf-td">
-							<a href="index.html">
+							<a href="index.php">
 								<img src="img/logo-regular.png" alt="Logo">
 							</a>
 						</div>
@@ -168,22 +168,22 @@
 									<div class="sub-nav">
 										<ul>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>1. Business</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>2. Presentation</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>3. Creative</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>4. Photography</span>
 												</a>
 											</li>
@@ -340,10 +340,10 @@
 							<div class="wf-td">
 								<ul class="breadcrumbs text-normal">
 									<li>
-										<a href="index.html">Главная</a>
+										<a href="index.php">Главная</a>
 									</li>
 									<li>
-										<a href="login.html">Вход</a>
+										<a href="login.php">Вход</a>
 									</li>
 								</ul>
 							</div>
@@ -379,7 +379,7 @@
 									</p>
 									
 									<p>
-										<a href="cabinet.html" id="doRegistr" class="form-submit">
+										<a href="cabinet.php" id="doRegistr" class="form-submit">
 											<span>Войти</span>
 										</a>
 									</p>

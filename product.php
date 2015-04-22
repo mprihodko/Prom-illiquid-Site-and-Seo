@@ -49,14 +49,14 @@
 									
 									<div class="right-block wf-td clearfix">
 										<div class="mini-login">
-											<a href="login.html" class="submit">
+											<a href="login.php" class="submit">
 												<i class="fa fa-sign-in"></i>
 												<span class="top-bar-icon-text">Войти</span>
 											</a>
 										</div>
 									
 										<div class="mini-login">
-											<a href="registration.html" class="submit">
+											<a href="registration.php" class="submit">
 												<i class="fa fa-pencil"></i>
 												<span class="top-bar-icon-text">Зарегистрироваться</span>
 											</a>
@@ -96,7 +96,7 @@
 					<div class="wf-wrap clearfix">
 							
 						<div id="branding" class="wf-td">
-							<a href="index.html">
+							<a href="index.php">
 								<img src="img/logo-regular.png" alt="Logo">
 							</a>
 						</div>
@@ -168,22 +168,22 @@
 									<div class="sub-nav out-level">
 										<ul>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>1. Business</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>2. Presentation</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>3. Creative</span>
 												</a>
 											</li>
 											<li>
-												<a href="index.html" onclick="return false;">
+												<a href="index.php" onclick="return false;">
 													<span>4. Photography</span>
 												</a>
 											</li>
@@ -340,16 +340,16 @@
 							<div class="wf-td">
 								<ul class="breadcrumbs text-normal">
 									<li>
-										<a href="index.html">Главная</a>
+										<a href="index.php">Главная</a>
 									</li>
 									<li>
-										<a href="categories.html">Категории</a>
+										<a href="categories.php">Категории</a>
 									</li>
 									<li>
-										<a href="subcategories.html">Подкатегория</a>
+										<a href="subcategories.php">Подкатегория</a>
 									</li>
 									<li>
-										<a href="product.html">Продукт</a>
+										<a href="product.php">Продукт</a>
 									</li>
 								</ul>
 							</div>
