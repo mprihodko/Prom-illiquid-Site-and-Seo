@@ -386,6 +386,15 @@
                                     <!--</a>-->
                                 </p>
                             </form>
+                            <?php
+                            require_once 'application/classes/user.php';
+                            $user = new User();
+                            if (isset($_POST['register'])) {
+                                $user->register();
+                            }                            
+                            ?>﻿
+
+
 
                         </div>
 
@@ -711,10 +720,4 @@
         <script src="js/main.js"></script>
     </body>
 </html>
-<?php
-require_once 'application/register/user.php';
-if (isset($_POST['register'])) {
-  $reg=new User();
-  $reg->register();
-}
-?>﻿
+
