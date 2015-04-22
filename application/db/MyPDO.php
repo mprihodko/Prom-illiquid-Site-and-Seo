@@ -1,6 +1,4 @@
 <?php
-//namespace application\db\PDO_connect;
-//use PDO;
 
 class PDO_connect {
 
@@ -8,7 +6,7 @@ class PDO_connect {
     private $user;
     private $password;
 
-    function db_connect() {
+    function __construct() {
         $this->user = 'root';
         $this->password = '123456';
         $dsn = "mysql:host=127.0.0.1;dbname=prom_illiquid;charset=UTF8";
@@ -25,6 +23,7 @@ class PDO_connect {
             echo 'Подключение не удалось: ' . $e->getMessage();
         }
     }
+
 }
 
 //$connect=new PDO_connect();
