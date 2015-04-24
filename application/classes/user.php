@@ -1,5 +1,4 @@
 <?php
-
 require_once 'application/db/MyPDO.php';
 
 class User extends PDO_connect {
@@ -24,7 +23,16 @@ class User extends PDO_connect {
                 }
             } else {
                 if (preg_match('/\S+@\S+\.\S+/', $elem)) {
-                    return $elem;
+                    $stmt = $this->dbh->prepare('SELECT email FROM user WHERE email = :email');
+                    $stmt->execute(array('email' => $elem));
+                    foreach ($stmt as $row) {
+                        if ($elem == $row['email']) {
+                            echo "Такой Email уже зарегистрирован";
+                            exit();
+                        } else {
+                            return $elem;
+                        }
+                    }
                 }
             }
         } else {
@@ -55,7 +63,7 @@ class User extends PDO_connect {
         } else {
             $this->err.='Введите корректное имя компании!<br/>';
         }
-        if (empty($this->err)) {           
+        if (empty($this->err)) {
             $sql = $this->dbh->query("INSERT INTO user (name, email, password, company) VALUES ('$this->name', '$this->email', '$this->password', '$this->company')");
         } else {
             echo $this->err;
@@ -65,12 +73,10 @@ class User extends PDO_connect {
     function login() {
         $stmt = $this->dbh->prepare('SELECT name FROM user WHERE email = :email AND password= :password');
         $stmt->execute(array('email' => $_POST['email'], 'password' => $_POST['password']));
-        
-        foreach ($stmt as $row) {            
-            if(!empty( $row['name'] )){
-                return TRUE;
-            }else{
-                return FALSE;
+
+        foreach ($stmt as $row) {
+            if (!empty($row['name'])) {
+                header("Location: index.php?cabinet");
             }
         }
     }

@@ -13,7 +13,7 @@
                         <a href="index.php">Главная</a>
                     </li>
                     <li>
-                        <a href="index.php?page=registration">Регистрация</a>
+                        <a href="index.php?registration">Регистрация</a>
                     </li>
                 </ul>
             </div>
@@ -64,26 +64,10 @@
                             <input type="submit" name="register" value="Зарегистрироваться" disabled>
                         </span>
                     </p>
-                </form>
-                <?php
-                ini_set('error_reporting', E_ALL);
-                ini_set('display_errors', 1);
-                ini_set('display_startup_errors', 1);
-                require_once 'application/classes/user.php';
-                $user = new User();
-                if (isset($_POST['register'])) {
-                    $user->register();
-                }
-                ?>﻿
-
-
-
+                </form>  
             </div>
-
         </div>
-
-
-
+        
         <hr>
 
         <div class="row">
@@ -218,6 +202,7 @@
 
     </div>
 </div>
-
+<script src="js/validation.js"></script>
+<script src="js/fixedMenu.js"></script>
 <!-- Main Content End -->
 

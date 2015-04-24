@@ -21,7 +21,7 @@
                                 </div>
                             </button>
 
-                            <a href="index.php?page=categories" title="Искать на сайте">
+                            <a href="index.php?categories" title="Искать на сайте">
                                 <button type="button" class="btn btn-default search-block-button" value="BUY" id="buy-search-button">
                                     <span class="btn-text">Поиск</span>
                                     <span class="search-select-icon">

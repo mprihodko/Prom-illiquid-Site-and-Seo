@@ -1,5 +1,4 @@
 <header id="header" class="normal-header line-decoration">
-
     <!-- Top Bar -->
     <div id="top-bar" class="text-normal full-width-line clearfix">
         <div class="wf-wrap">
@@ -24,14 +23,14 @@
 
                     <div class="right-block wf-td clearfix">
                         <div class="mini-login">
-                            <a href="index.php?page=enter" class="submit">
+                            <a href="index.php?enter" class="submit">
                                 <i class="fa fa-sign-in"></i>
                                 <span class="top-bar-icon-text">Войти</span>
                             </a>
                         </div>
 
                         <div class="mini-login">
-                            <a href="index.php?page=registration" class="submit">
+                            <a href="index.php?registration" class="submit">
                                 <i class="fa fa-pencil"></i>
                                 <span class="top-bar-icon-text">Зарегистрироваться</span>
                             </a>
