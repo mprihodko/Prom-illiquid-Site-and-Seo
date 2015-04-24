@@ -31,7 +31,7 @@
         <div class="row">
 
             <div class="form-container">
-                <form name="registform" action="registration.php" method="POST">
+                <form name="registform" action="" method="POST">
                     <div class="form-fields">
                         <span class="form-name">
                             <input type="text" class="validate" placeholder="Ваше имя *" name="name" value="">
