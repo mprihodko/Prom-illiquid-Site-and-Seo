@@ -365,21 +365,33 @@
                                 <div class="form-fields">
                                     <span class="form-name">
                                         <input type="text" class="validate" placeholder="Ваше имя *" name="name" value="">
+										<span class="form-icon">
+											<i class="fa"></i>
+										</span>
                                     </span>
                                     <span class="form-name">
                                         <input type="text" class="validate" placeholder="E-mail *" name="email" value="">
+										<span class="form-icon">
+											<i class="fa"></i>
+										</span>
                                     </span>
                                     <span class="form-name">
-                                        <input type="password" class="validate" placeholder="Пароль *" name="password" value="">
+                                        <input type="password" class="validate" placeholder="Пароль * (минимум 8 символов)" name="password" value="">
+										<span class="form-icon">
+											<i class="fa"></i>
+										</span>
                                     </span>
                                     <span class="form-name">
-                                        <input type="text" class="validate" placeholder="Название компании" name="company" value="">
+                                        <input type="text" class="validate" placeholder="Название компании *" name="company" value="">
+										<span class="form-icon">
+											<i class="fa"></i>
+										</span>
                                     </span>
                                 </div>
 
                                 <p>
                                     <span class="form-submit">
-                                        <input type="submit" name="register" value="Зарегистрироваться">                                        
+                                        <input type="submit" name="register" value="Зарегистрироваться" disabled>                                        
                                     </span>
                                 </p>
                             </form>
@@ -717,6 +729,7 @@
         <script src="js/perfect-scrollbar.jquery.js"></script>
         <script src="js/jquery.fancybox.pack.js"></script>
         <script src="js/fixedMenu.js"></script>
+        <script src="js/validation.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

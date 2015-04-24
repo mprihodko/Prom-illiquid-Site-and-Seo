@@ -892,6 +892,7 @@ body.no-bg {
 	border-left: 1px solid #eaeaea;
 	border-right: 1px solid #eaeaea;
 	border-bottom: 0;
+	position: relative;
 }
 
 .form-name:first-child {
@@ -2237,6 +2238,35 @@ body.no-bg {
 
 .scroll-top:hover i {
 	color: rgba(255, 255, 255, 1);
+}
+
+/* Registratio */
+
+.validateInputTrue,
+.validateInputTrue:focus {
+  box-shadow: inset 0px 0px 5px rgba(0, 255, 0, .4);
+}
+
+.validateInputFalse,
+.validateInputFalse:focus {
+  box-shadow: inset 0px 0px 5px rgba(255, 0, 0, .4);
+}
+
+.form-icon {
+	display: inline;
+	position: absolute;
+	right: 15px;
+	top: 7px;
+	font-size: 1.1em;
+	color: rgba(0, 0, 0, 0);
+}
+
+.validateIconTrue {
+	color: rgba(0, 255, 0, 1);
+}
+
+.validateIconFalse {
+	color: rgba(255, 0, 0, 1);
 }
 
 
