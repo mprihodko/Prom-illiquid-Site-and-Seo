@@ -13,13 +13,13 @@
                         <a href="index.php">Главная</a>
                     </li>
                     <li>
-                        <a href="index.php?page=categories">Категории</a>
+                        <a href="index.php?categories">Категории</a>
                     </li>
                     <li>
-                        <a href="index.php?page=subcategories">Подкатегория</a>
+                        <a href="index.php?subcategories">Подкатегория</a>
                     </li>
                     <li>
-                        <a href="index.php?page=product">Продукт</a>
+                        <a href="index.php?product">Продукт</a>
                     </li>
                 </ul>
             </div>
@@ -393,5 +393,5 @@
 </div>
 
 
-
+<script src="js/product_settings.js"></script>
 <!-- Main Content End -->

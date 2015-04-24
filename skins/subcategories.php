@@ -13,10 +13,10 @@
                         <a href="index.php">Главная</a>
                     </li>
                     <li>
-                        <a href="index.php?page=categories.php">Категории</a>
+                        <a href="index.php?categories.php">Категории</a>
                     </li>
                     <li>
-                        <a href="index.php?page=subcategories">Подкатегория</a>
+                        <a href="index.php?subcategories">Подкатегория</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +72,7 @@
                                     <i class="fa fa-shopping-cart"></i>
                                 </div>
                             </a>
-                            <a href="index.php?page=product" title="К товару">
+                            <a href="index.php?product" title="К товару">
                                 <div class="show-it">
                                     <i class="fa fa-share"></i>
                                 </div>
@@ -104,7 +104,7 @@
                                     <i class="fa fa-shopping-cart"></i>
                                 </div>
                             </a>
-                            <a href="index.php?page=product" title="К товару">
+                            <a href="index.php?product" title="К товару">
                                 <div class="show-it">
                                     <i class="fa fa-share"></i>
                                 </div>
@@ -136,7 +136,7 @@
                                     <i class="fa fa-shopping-cart"></i>
                                 </div>
                             </a>
-                            <a href="index.php?page=product" title="К товару">
+                            <a href="index.php?product" title="К товару">
                                 <div class="show-it">
                                     <i class="fa fa-share"></i>
                                 </div>
@@ -168,7 +168,7 @@
                                     <i class="fa fa-shopping-cart"></i>
                                 </div>
                             </a>
-                            <a href="index.php?page=product" title="К товару">
+                            <a href="index.php?product" title="К товару">
                                 <div class="show-it">
                                     <i class="fa fa-share"></i>
                                 </div>
@@ -200,7 +200,7 @@
                                     <i class="fa fa-shopping-cart"></i>
                                 </div>
                             </a>
-                            <a href="index.php?page=product" title="К товару">
+                            <a href="index.php?product" title="К товару">
                                 <div class="show-it">
                                     <i class="fa fa-share"></i>
                                 </div>
@@ -232,7 +232,7 @@
                                     <i class="fa fa-shopping-cart"></i>
                                 </div>
                             </a>
-                            <a href="index.php?page=product" title="К товару">
+                            <a href="index.php?product" title="К товару">
                                 <div class="show-it">
                                     <i class="fa fa-share"></i>
                                 </div>

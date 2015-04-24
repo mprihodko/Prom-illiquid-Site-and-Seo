@@ -1,17 +1,3 @@
-<?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-require_once 'application/classes/user.php';
-$user = new User();
-if (isset($_POST['login'])) {
-    if ($user->login() == true) {
-        echo "Вход выполнен!";
-    } else {
-        echo "Введите корректные данные!";
-    }
-}
-?>﻿
 <!-- Page title -->
 
 <div class="page-title">
@@ -27,7 +13,7 @@ if (isset($_POST['login'])) {
                         <a href="index.php">Главная</a>
                     </li>
                     <li>
-                        <a href="index.php?page=login">Вход</a>
+                        <a href="index.php?login">Вход</a>
                     </li>
                 </ul>
             </div>
@@ -207,6 +193,6 @@ if (isset($_POST['login'])) {
 
     </div>
 </div>
-
+<script src="js/fixedMenu.js"></script>
 <!-- Main Content End -->
 
