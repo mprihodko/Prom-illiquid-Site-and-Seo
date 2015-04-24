@@ -45,7 +45,7 @@ function validate( self, str, pattern ) {
 	
 	switch( self.getAttribute('name') ) {
 		case 'name':
-			if( !pattern.test( str ) ) {
+			if( !pattern.test( str ) && self.value.length ) {
 				lightAccept();
 			} else {
 				lightDenied();
@@ -66,7 +66,7 @@ function validate( self, str, pattern ) {
 			}
 		break;
 		case 'email':
-			if( pattern.test( str ) ) {
+			if( pattern.test( str ) && self.value.length ) {
 				lightAccept();
 			} else {
 				lightDenied();
