@@ -65,8 +65,13 @@ class User extends PDO_connect {
     function login() {
         $stmt = $this->dbh->prepare('SELECT name FROM user WHERE email = :email AND password= :password');
         $stmt->execute(array('email' => $_POST['email'], 'password' => $_POST['password']));
-        foreach ($stmt as $row) {
-            echo $row['name'] . "\n";
+        
+        foreach ($stmt as $row) {            
+            if(!empty( $row['name'] )){
+                return TRUE;
+            }else{
+                return FALSE;
+            }
         }
     }
 
