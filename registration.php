@@ -390,9 +390,9 @@
                                 </div>
 
                                 <p>
-                                    <span class="form-submit">
-                                        <input type="submit" name="register" value="Зарегистрироваться" disabled>                                        
-                                    </span>
+									<span class="form-submit">
+										<input type="submit" name="register" value="Зарегистрироваться" disabled>
+									</span>
                                 </p>
                             </form>
                             <?php

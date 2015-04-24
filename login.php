@@ -380,7 +380,7 @@
 
                                 <p>
 									<span class="form-submit">
-										<input type="submit" name="login">
+										<input type="submit" name="login" value="Войти">
 									</span>
                                 </p>
                             </form>

@@ -8,7 +8,7 @@ var form = document.forms.registform,
 	inputEmail = form.elements.email,
 	inputCompany = form.elements.company,
 	inputSubmit = form.elements.register;
-
+	
 // name
 inputName.addEventListener('keyup', function() {
 	var pattern = /[^a-zA-Zа-яА-Я]/gi;
