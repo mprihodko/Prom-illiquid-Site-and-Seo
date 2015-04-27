@@ -26,14 +26,18 @@
                         <div class="mini-login">
                             <a href="index.php?cabinet" class="submit">
                                 <i class="fa fa-sign-in"></i>
-                                <span class="top-bar-icon-text">'name'</span>
+                                <span class="top-bar-icon-text"><?= $_SESSION['user'] ?></span>
                             </a>
                         </div>
 
                         <div class="mini-login">
                             <a href="index.php" class="submit">
                                 <i class="fa fa-pencil"></i>
-                                <span class="top-bar-icon-text">Выйти</span>
+                                <!--<span class="top-bar-icon-text" id="exit"">Выйти</span>-->
+                                <form action="" method="POST">
+                                    <input type="submit" name="logout" value="Выйти" class="top-bar-icon-text">
+                                </form>
+
                             </a>
                         </div>
                         <!-- Social -->

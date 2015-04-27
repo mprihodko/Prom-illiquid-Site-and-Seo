@@ -76,9 +76,13 @@ class User extends PDO_connect {
 
         foreach ($stmt as $row) {
             if (!empty($row['name'])) {
+                $_SESSION['user']=$row['name'];
                 header("Location: index.php?cabinet");
             }
         }
+    }
+    function logOut(){
+        
     }
 
 }
