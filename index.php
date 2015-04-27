@@ -1,11 +1,3 @@
-<?php
-session_start();
-require_once 'application/classes/user.php';
-require_once 'application/handler.php';
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,8 +15,19 @@ ini_set('display_startup_errors', 1);
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
-    </head>
+    </head>   
     <body class="no-bg">
+        <div style="display: none">
+            <?php
+            session_start();
+            require_once 'application/classes/user.php';
+            require_once 'application/handler.php';
+            ini_set('error_reporting', E_ALL);
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            
+            ?>
+        </div>
         <section id="page">            
             <?php
             if (@$_SESSION['user']) {

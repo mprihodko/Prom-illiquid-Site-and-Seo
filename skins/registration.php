@@ -203,6 +203,5 @@
     </div>
 </div>
 <script src="js/validation.js"></script>
-<script src="js/fixedMenu.js"></script>
 <!-- Main Content End -->
 

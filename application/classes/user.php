@@ -1,4 +1,5 @@
 <?php
+
 require_once 'application/db/MyPDO.php';
 
 class User extends PDO_connect {
@@ -21,23 +22,13 @@ class User extends PDO_connect {
                 if (preg_match("/[a-zA-ZА-Яа-я0-9]/", $elem)) {
                     return $elem;
                 }
-            } else {
-                if (preg_match('/\S+@\S+\.\S+/', $elem)) {
-                    $stmt = $this->dbh->prepare('SELECT email FROM user WHERE email = :email');
-                    $stmt->execute(array('email' => $elem));
-                    foreach ($stmt as $row) {
-                        if ($elem == $row['email']) {
-                            echo "Такой Email уже зарегистрирован";
-                            exit();
-                        } else {
-                            return $elem;
-                        }
-                    }
-                }
             }
-        } else {
-            echo "Заполните все поля формы";
-            exit();
+            if (preg_match('/\S+@\S+\.\S+/', $elem)) {
+                return $elem;
+            } else {
+                echo "Заполните все поля формы";
+                exit();
+            }
         }
     }
 
@@ -76,12 +67,13 @@ class User extends PDO_connect {
 
         foreach ($stmt as $row) {
             if (!empty($row['name'])) {
-                $_SESSION['user']=$row['name'];
+                $_SESSION['user'] = $row['name'];
                 header("Location: index.php?cabinet");
             }
         }
     }
-    function logOut(){
+
+    function logOut() {
         
     }
 
