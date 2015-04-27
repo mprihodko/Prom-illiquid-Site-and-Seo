@@ -34,25 +34,25 @@
                 <form name="registform" action="" method="POST">
                     <div class="form-fields">
                         <span class="form-name">
-                            <input type="text" class="validate" placeholder="Ваше имя *" name="name" value="">
+                            <input type="text" class="validate" placeholder="Ваше имя *" name="name" value="" autofocus tabindex="1">
                             <span class="form-icon">
                                 <i class="fa"></i>
                             </span>
                         </span>
                         <span class="form-name">
-                            <input type="text" class="validate" placeholder="E-mail *" name="email" value="">
+                            <input type="text" class="validate" placeholder="E-mail *" name="email" value="" tabindex="2">
                             <span class="form-icon">
                                 <i class="fa"></i>
                             </span>
                         </span>
                         <span class="form-name">
-                            <input type="password" class="validate" placeholder="Пароль * (минимум 8 символов)" name="password" value="">
+                            <input type="password" class="validate" placeholder="Пароль * (минимум 8 символов)" name="password" value="" tabindex="3">
                             <span class="form-icon">
                                 <i class="fa"></i>
                             </span>
                         </span>
                         <span class="form-name">
-                            <input type="text" class="validate" placeholder="Название компании *" name="company" value="">
+                            <input type="text" class="validate" placeholder="Название компании *" name="company" value="" tabindex="4">
                             <span class="form-icon">
                                 <i class="fa"></i>
                             </span>
@@ -61,7 +61,7 @@
 
                     <p>
                         <span class="form-submit">
-                            <input type="submit" name="register" value="Зарегистрироваться" disabled>
+                            <input type="submit" name="register" value="Зарегистрироваться" tabindex="5">
                         </span>
                     </p>
                 </form>  

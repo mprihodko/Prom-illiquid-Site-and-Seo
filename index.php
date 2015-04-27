@@ -1,4 +1,5 @@
 <?php
+header("charset: utf8");
 session_start();
 require_once 'application/classes/user.php';
 require_once 'application/handler.php';

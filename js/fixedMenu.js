@@ -82,20 +82,24 @@
 	
 	//
 	
+	try {
+		$(document).on('click', '.top-bar-arrow', function() {
+		
+			if( $(this).find('i').hasClass('fa-angle-down') ) {
+				$(this).find('i').removeClass('fa-angle-down');
+				$(this).find('i').addClass('fa-angle-up');
+			} else {
+				$(this).find('i').removeClass('fa-angle-up');
+				$(this).find('i').addClass('fa-angle-down');
+			}
+			
+			$( '#top-bar' ).slideToggle();
+		
+		});
+	} catch(e) {
+		console.log( e.type + ' ' + e.message );
+	}
 	
-	$(document).on('click', '.top-bar-arrow', function() {
-		
-		if( $(this).find('i').hasClass('fa-angle-down') ) {
-			$(this).find('i').removeClass('fa-angle-down');
-			$(this).find('i').addClass('fa-angle-up');
-		} else {
-			$(this).find('i').removeClass('fa-angle-up');
-			$(this).find('i').addClass('fa-angle-down');
-		}
-		
-		$( '#top-bar' ).slideToggle();
-		
-	});
 	
 	
 	//

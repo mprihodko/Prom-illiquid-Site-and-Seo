@@ -8,7 +8,7 @@ class PDO_connect {
 
     function __construct() {
         $this->user = 'root';
-        $this->password = '123456';
+        $this->password = '';
         $dsn = "mysql:host=127.0.0.1;dbname=prom_illiquid;charset=UTF8";
         $opt = array(
             PDO::ATTR_PERSISTENT => true,
